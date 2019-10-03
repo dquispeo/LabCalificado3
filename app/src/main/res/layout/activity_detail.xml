@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailActivity">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/input_tipo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Saldo Actual "></TextView>
+        <TextView
+            android:id="@+id/input_tipo_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_toEndOf="@+id/input_tipo_text"
+            tools:text="Ahorro">
+        </TextView>
+        <TextView
+            android:id="@+id/input_soles_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:layout_toStartOf="@+id/input_monto_detail"
+            android:text="S/.">
+        </TextView>
+        <TextView
+            android:id="@+id/input_monto_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+            tools:text="1,200.00">
+        </TextView>
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/head"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="#000000"></TextView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/detail_list"
+        android:layout_below="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp" />
+</RelativeLayout>

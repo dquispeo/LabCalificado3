@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LabCalificado3</string>
+
+    <string-array name="tipo_de_cuenta">
+        <item>Tarjeta de Crédito</item>
+        <item>Ahorro</item>
+        <item>Efectivo</item>
+    </string-array>
+</resources>
